@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.constructor {
+  /* display: flex;
+  flex-direction: column; */
+  /* margin-top: 30px; */
+}
+
+.constructor__big-heading {
+  text-align: center;
+  font-size: 52px;
+  line-height: 59px;
+  font-style: normal;
+  font-weight: 700;
+  color: #323232;
+}
+
+.constructor__big-heading span {
+  color: #047dd9;
+}
+.constructor__small-heading {
+  margin-bottom: 50px;
+  color: #323232;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+}
+.constructor__menu-constructor {
+  display: grid;
+  justify-content: center;
+  gap: 82px;
+  grid-template-columns: 387px 486px 342px;
+}
+.constructor__menu-constructor__other-product {
+  display: grid;
+  /* padding-top: 100px; */
+  padding: 50px 23px 118px 15px;
+  /* grid-template-rows: 70px 1px 150px 1px 150px 1px 150px 1px; */
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.constructor__menu-constructor__other-product__other-item__description-other-product {
+  display: grid;
+  gap: 19px;
+  grid-template-columns: 19px 32px 173px;
+}
+.constructor__menu-constructor__other-product__other-item {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 82px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.constructor__menu-constructor__other-product__other-item__description-other-product__check-product {
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 2px solid #878787;
+  padding: 4px;
+}
+
+.constructor__menu-constructor__other-product__other-item__description-other-product__check-product:checked {
+  background-color: #00ac07;
+}
+
+.constructor__menu-constructor__other-product__other-item__description-other-product__img-other-product {
+  width: 41px;
+}
+
+.constructor__menu-constructor__other-product__other-item__description-other-product__heading-other-product {
+  color: #565656;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.constructor__menu-constructor__other-product__other-item__old-price-other-product {
+  color: #c8c8c8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  text-decoration-line: strikethrough;
+  text-decoration: line-through;
+}
+
+.constructor__menu-constructor__other-product__other-item__current-price-other-product {
+  color: #323232;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 22px;
+}
+
+hr {
+  width: 100%;
+  outline: none;
+  border-color: #c8c8c8;
+  background-color: #fff;
+  /* background: #c8c8c8; */
+  opacity: 0.3;
+}
+
+.constructor__menu-constructor__preview-window-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.constructor__menu-constructor__preview-window-product__ten-img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.constructor__menu-constructor__preview-window-product__main-ten-img {
+  transition: opacity 0.5s ease;
+}
+.show {
+  opacity: 1;
+}
+.item0 {
+  top: 170px;
+  left: 150px;
+}
+
+.item1 {
+  top: 250px;
+  left: 400px;
+}
+.item4 {
+  top: 470px;
+  left: 210px;
+}
+.item3 {
+  top: 514px;
+  left: 100px;
+}
+.item2 {
+  top: 360px;
+  left: 50px;
+}
+
+.constructor__menu-constructor__order-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(170, 170, 170, 0.2);
+}
+
+.constructor__menu-constructor__order-menu__heading-order-menu {
+  /* margin-top: 50px; */
+  color: #323232;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+select {
+  /* background-color: #f2f2f2; */
+  color: #00ac07;
+  border: 2px solid #00ac07;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../img/icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  /* background-size: 20px; */
+  padding: 15px 123px 15px 15px;
+  margin-bottom: 30px;
+}
+option {
+  border: 2px solid #00ac07;
+  color: #00ac07;
+}
+/* select::-ms-expand {
+  display: none;
+} */
+
+.constructor__menu-constructor__order-menu__sum-order {
+  margin: 20px 0;
+  color: #323232;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.constructor__menu-constructor__order-menu__sum-order span {
+  color: #323232;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+}
+
+.constructor__menu-constructor__order-menu__input-name {
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  border-radius: 3px;
+  background: #f3f3f3;
+  outline: none;
+  border: none;
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 0 15px 15px;
+}
+
+.constructor__menu-constructor__order-menu__input-phone {
+  margin: 20px 0;
+  font-family: "Inter", sans-serif;
+  border-radius: 3px;
+  background: #f3f3f3;
+  outline: none;
+  border: none;
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 0 15px 15px;
+}
+
+.constructor__menu-constructor__order-menu__description-order {
+  text-align: center;
+  width: 278px;
+  color: #a3a3a3;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.constructor__menu-constructor__order-menu__button-order {
+  padding: 30px 90px;
+  /* gap: 10px; */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 17px;
+  border-radius: 15px;
+  border: none;
+  background: #00ac07;
+  color: #fff;
+}
+
+/* test animation */
+/* 'эти свойства работают только, когда картинка идет сразу после чекбокса, вопрос к разрабочикам:)  */
+
+/* .test1 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.test:checked ~ .test1 {
+  opacity: 1;
+} */
+/* end test animation */
+
+/* .test1 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+} */
+
+/* переделать названия классов модалки!!! */
+/* Задний фон */
+
+/* Модальное окно */
+
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9;
+}
+
+.modal-window__modal-content__close {
+  z-index: 99;
+}
+.modal-window__modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 20%;
+  border-radius: 10px;
+}
+
+.modal-window__modal-content__close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-window__modal-content__close:hover,
+.modal-window__modal-content__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
